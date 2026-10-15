@@ -1,0 +1,91 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // --- ১. এলিমেন্ট সিলেক্টর ---
+    const searchForm = document.getElementById('mobile-search-form');
+    const searchInput = document.getElementById('mobile-search-input');
+    const searchOutput = document.getElementById('search-output');
+    const searchLoader = document.getElementById('search-loader');
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+    const modalBackdrop = document.getElementById('modal-backdrop');
+    const modalBody = document.getElementById('modal-body');
+    const closeModal = document.getElementById('close-modal');
+
+    // --- ২. মোবাইল মেনু কন্ট্রোল ---
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+        });
+    }
+
+    // --- ৩. মোডাল কন্ট্রোল (Login/Rooms) ---
+    const openModal = (content) => {
+        modalBody.innerText = content; 
+        modalBackdrop.style.display = 'flex';
+    };
+
+    if (closeModal) {
+        closeModal.addEventListener('click', () => {
+            modalBackdrop.style.display = 'none';
+        });
+    }
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modalBackdrop) {
+            modalBackdrop.style.display = 'none';
+        }
+    });
+
+    document.querySelectorAll('.hotspot').forEach(button => {
+        button.addEventListener('click', () => {
+            const room = button.getAttribute('data-room');
+            const action = button.getAttribute('data-action');
+
+            if (action === 'Login') {
+                openModal('লগইন পেজে আপনাকে স্বাগতম। দয়া করে আপনার ইউজারনেম এবং পাসওয়ার্ড দিয়ে প্রবেশ করুন।');
+            } else if (room) {
+                openModal(`${room} রুমের তথ্য লোড হচ্ছে... দয়া করে অপেক্ষা করুন।`);
+            }
+        });
+    });
+
+    // --- ৪. রেফারেন্স সার্চ লজিক ---
+    if (searchForm) {
+        searchForm.addEventListener('submit', async (e) => {
+            e.preventDefault(); 
+
+            const query = searchInput.value.trim();
+            if (!query) return;
+
+            searchLoader.style.display = 'block';
+            searchOutput.innerText = '';
+
+            try {
+                // Supabase কানেক্টিভটি চেক
+                if (typeof supabase === 'undefined') {
+                    throw new Error("Supabase client is not initialized. Please check supabase-client.js");
+                }
+
+                const { data, error } = await supabase
+                    .from('references') 
+                    .select('*')
+                    .eq('ref_number', query) 
+                    .single();
+
+                searchLoader.style.display = 'none';
+
+                if (error || !data) {
+                    searchOutput.innerText = "দুঃখিত, এই নম্বরটি খুঁজে পাওয়া যায়নি।";
+                    searchOutput.style.color = "red";
+                } else {
+                    searchOutput.innerText = `অভিনন্দন! আপনার তথ্য পাওয়া গেছে: ${data.name || 'নাম পাওয়া যায়নি'}`;
+                    searchOutput.style.color = "green";
+                }
+            } catch (err) {
+                searchLoader.style.display = 'none';
+                searchOutput.innerText = "সিস্টেমে সমস্যা হচ্ছে। দয়া করে পরে চেষ্টা করুন।";
+                searchOutput.style.color = "red";
+                console.error("Search Error:", err);
+            }
+        });
+    }
+});

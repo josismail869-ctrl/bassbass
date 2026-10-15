@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#030817" />
+  <meta name="description" content="Probashi Voice — Your trusted platform for overseas opportunities." />
+  <title>Probashi Voice — Global Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="modal.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Desktop composition: the supplied artwork is used as the exact visual reference, with accessible interaction hotspots layered above it. -->
+    <main class="desktop-reference" aria-label="Probashi Voice global portal">
+      <img class="reference-art" src="assets/ProbashiVoiceGlobalPortal.png" alt="Probashi Voice global portal with country rooms and search number panel" />
+      <div class="reference-hotspots" aria-label="Interactive portal controls">
+        <button class="hotspot top-nav nav-results" data-action="Results" aria-label="Open Results">Results</button>
+        <button class="hotspot top-nav nav-free" data-action="Free Prediction" aria-label="Open Free Prediction">Free Prediction</button>
+        <button class="hotspot top-nav nav-vip" data-action="VIP Prediction" aria-label="Open VIP Prediction">VIP Prediction</button>
+        <button class="hotspot top-nav nav-membership" data-action="Membership" aria-label="Open Membership">Membership</button>
+        <button class="hotspot top-nav nav-community" data-action="Community" aria-label="Open Community">Community</button>
+        <button class="hotspot login-hotspot" data-action="Login" aria-label="Log in">Login</button>
+
+        <button class="hotspot room room-thailand" data-room="Thailand" aria-label="Enter Thailand room">Thailand</button>
+        <button class="hotspot room room-malaysia" data-room="Malaysia" aria-label="Enter Malaysia room">Malaysia</button>
+        <button class="hotspot room room-saudi" data-room="Saudi Arabia" aria-label="Enter Saudi Arabia room">Saudi Arabia</button>
+        <button class="hotspot room room-uae" data-room="UAE" aria-label="Enter UAE room">UAE</button>
+        <button class="hotspot room room-qatar" data-room="Qatar" aria-label="Enter Qatar room">Qatar</button>
+        <button class="hotspot room room-oman" data-room="Oman" aria-label="Enter Oman room">Oman</button>
+        <button class="hotspot room room-kuwait" data-room="Kuwait" aria-label="Enter Kuwait room">Kuwait</button>
+        <button class="hotspot room room-bahrain" data-room="Bahrain" aria-label="Enter Bahrain room">Bahrain</button>
+
+        <form class="reference-search" id="reference-search-form">
+          <label class="sr-only" for="reference-search-input">Search number</label>
+          <input id="reference-search-input" type="text" autocomplete="off" placeholder="Search number" />
+          <button type="submit">Search Now</button>
+        </form>
+      </div>
+    </main>
+
+    <nav class="desktop-official-links" aria-label="Official links and security information">
+      <div class="official-links-row"><span>Follow the official Probashi Voice channels</span><a href="https://www.youtube.com/@ProbashiVoicesymy" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://wa.me/8801324360629" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="https://x.com/IsmailHossenDx" target="_blank" rel="noopener noreferrer">X</a><a href="https://threads.com/@4d6dmktshe" target="_blank" rel="noopener noreferrer">Threads</a><a href="mailto:golapiloveyou557@gmail.com">Email</a></div>
+      <div class="security-note"><span class="security-badge">✓</span><span><strong>Secure &amp; Official</strong><small>Use only these verified links. We never ask for passwords, OTPs, card details, or one-time codes.</small></span></div>
+    </nav>
+
+    <!-- Mobile/tablet experience: retains the same visual language while making every section readable and usable. -->
+    <main class="mobile-experience">
+      <header class="mobile-header">
+        <a class="brand" href="#top" aria-label="Probashi Voice home">
+          <span class="brand-mark">♩</span>
+          <span><strong>Probashi Voice</strong><small>Stay Connected, Stay Informed</small></span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+      </header>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Primary navigation">
+        <button data-action="Results">Results</button>
+        <button data-action="Free Prediction">Free Prediction</button>
+        <button data-action="VIP Prediction">VIP Prediction</button>
+        <button data-action="Membership">Membership</button>
+        <button data-action="Community">Community</button>
+        <button data-action="Login">Login</button>
+      </nav>
+
+      <section class="mobile-hero" id="top">
+        <span class="eyebrow">♛ Your Trusted Platform for Overseas Opportunities</span>
+        <h1>Welcome to <em>Probashi Voice</em></h1>
+        <p>Choose your country, find your next opportunity, and stay connected wherever you are.</p>
+      </section>
+
+      <section class="country-grid" aria-label="Country portals">
+        <article class="country-card thailand"><div class="card-top"><span class="flag">🇹🇭</span><span class="status">Active Portal</span></div><h2>Thailand</h2><p>Work · Study · Future</p><button data-room="Thailand">Enter Room <span>→</span></button></article>
+        <article class="country-card malaysia"><div class="card-top"><span class="flag">🇲🇾</span><span class="status">Active Portal</span></div><h2>Malaysia</h2><p>Work · Study · Future</p><button data-room="Malaysia">Enter Room <span>→</span></button></article>
+        <article class="country-card saudi"><div class="card-top"><span class="flag">🇸🇦</span><span class="status">Active Portal</span></div><h2>Saudi Arabia</h2><p>Work · Hajj · Future</p><button data-room="Saudi Arabia">Enter Room <span>→</span></button></article>
+        <article class="country-card uae"><div class="card-top"><span class="flag">🇦🇪</span><span class="status">Active Portal</span></div><h2>UAE</h2><p>Work · Study · Future</p><button data-room="UAE">Enter Room <span>→</span></button></article>
+        <article class="country-card qatar"><div class="card-top"><span class="flag">🇶🇦</span><span class="status">Active Portal</span></div><h2>Qatar</h2><p>Work · Study · Future</p><button data-room="Qatar">Enter Room <span>→</span></button></article>
+        <article class="country-card oman"><div class="card-top"><span class="flag">🇴🇲</span><span class="status">Active Portal</span></div><h2>Oman</h2><p>Work · Study · Future</p><button data-room="Oman">Enter Room <span>→</span></button></article>
+        <article class="country-card kuwait"><div class="card-top"><span class="flag">🇰🇼</span><span class="status">Active Portal</span></div><h2>Kuwait</h2><p>Work · Study · Future</p><button data-room="Kuwait">Enter Room <span>→</span></button></article>
+        <article class="country-card bahrain"><div class="card-top"><span class="flag">🇧🇭</span><span class="status">Active Portal</span></div><h2>Bahrain</h2><p>Work · Study · Future</p><button data-room="Bahrain">Enter Room <span>→</span></button></article>
+      </section>
+
+      <section class="search-panel" aria-labelledby="mobile-search-title">
+        <div class="search-copy"><span class="search-icon">⌕</span><div><h2 id="mobile-search-title">Search Number</h2><p>Find your desired number quickly and easily.</p></div></div>
+        <form id="mobile-search-form" class="search-form"><label class="sr-only" for="mobile-search-input">Enter number</label><input id="mobile-search-input" type="text" placeholder="Enter number..." /><button type="submit">Search Now <span>→</span></button></form>
+        <p class="search-result" id="mobile-search-result" aria-live="polite"></p>
+      </section>
+
+      <section class="feature-strip" aria-label="Platform benefits">
+        <div><span>♢</span><p><strong>100% Trusted</strong><small>Safe & Secure</small></p></div>
+        <div><span>ϟ</span><p><strong>Fast Results</strong><small>Instant Updates</small></p></div>
+        <div><span>♧</span><p><strong>Global Community</strong><small>Stay Connected</small></p></div>
+        <div><span>♛</span><p><strong>VIP Access</strong><small>Premium Features</small></p></div>
+      </section>
+
+      <footer class="mobile-footer"><div class="security-note"><span class="security-badge">✓</span><span><strong>Secure &amp; Official</strong><small>We never ask for passwords, OTPs, card details, or one-time codes.</small></span></div><div class="mobile-footer-bottom"><span>© 2026 Probashi Voice. Together We Build Better Future.</span><span class="official-links-inline"><a href="https://www.youtube.com/@ProbashiVoicesymy" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://wa.me/8801324360629" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="https://x.com/IsmailHossenDx" target="_blank" rel="noopener noreferrer">X</a><a href="https://threads.com/@4d6dmktshe" target="_blank" rel="noopener noreferrer">Threads</a><a href="mailto:golapiloveyou557@gmail.com">Email</a></span></div></footer>
+    </main>
+  </div>
+  <div class="modal-backdrop" id="modal-backdrop" hidden>
+    <section class="action-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Close dialog">×</button>
+      <p class="modal-kicker">Probashi Voice</p>
+      <h2 id="modal-title">Welcome back</h2>
+      <div id="modal-content"></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

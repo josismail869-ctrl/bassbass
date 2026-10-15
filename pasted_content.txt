@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probashi Voice - Global Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0b0f19;
+            color: #ffffff;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border {
+            border: 2px solid rgba(246, 211, 101, 0.4);
+        }
+        .card-glow-thailand { box-shadow: 0 0 25px rgba(249, 115, 22, 0.3); border-color: rgba(249, 115, 22, 0.6); }
+        .card-glow-malaysia { box-shadow: 0 0 25px rgba(59, 130, 246, 0.3); border-color: rgba(59, 130, 246, 0.6); }
+        .card-glow-saudi { box-shadow: 0 0 25px rgba(16, 185, 129, 0.3); border-color: rgba(16, 185, 129, 0.6); }
+        .card-glow-uae { box-shadow: 0 0 25px rgba(236, 72, 153, 0.3); border-color: rgba(236, 72, 153, 0.6); }
+        .card-glow-qatar { box-shadow: 0 0 25px rgba(220, 38, 38, 0.3); border-color: rgba(220, 38, 38, 0.6); }
+        .card-glow-oman { box-shadow: 0 0 25px rgba(6, 182, 212, 0.3); border-color: rgba(6, 182, 212, 0.6); }
+        .card-glow-kuwait { box-shadow: 0 0 25px rgba(234, 179, 8, 0.3); border-color: rgba(234, 179, 8, 0.6); }
+        .card-glow-bahrain { box-shadow: 0 0 25px rgba(168, 85, 247, 0.3); border-color: rgba(168, 85, 247, 0.6); }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between bg-[#070913]">
+
+    <!-- Top Header Navigation -->
+    <header class="w-full py-4 px-6 bg-[#0b0f19]/80 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+            
+            <!-- Logo Section -->
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-yellow-500 to-amber-300 flex items-center justify-center text-black font-bold text-xl shadow-lg shadow-yellow-500/20">
+                    <i class="fa-solid fa-microphone-lines"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-wide text-white">Probashi Voice</span>
+                    <p class="text-[10px] text-yellow-400 font-medium tracking-wider">Stay Connected, Stay Informed</p>
+                </div>
+            </div>
+
+            <!-- Navigation Links / Menu Pills -->
+            <nav class="flex flex-wrap items-center gap-2">
+                <a href="#" class="px-4 py-2 rounded-full bg-[#131b2e] border border-yellow-500/30 text-yellow-400 text-sm font-medium hover:bg-yellow-500 hover:text-black transition flex items-center space-x-2 shadow-sm">
+                    <i class="fa-solid fa-table-list"></i>
+                    <span>Results</span>
+                </a>
+                <a href="#" class="px-4 py-2 rounded-full bg-[#131b2e] border border-yellow-500/30 text-yellow-400 text-sm font-medium hover:bg-yellow-500 hover:text-black transition flex items-center space-x-2 shadow-sm">
+                    <i class="fa-solid fa-gift"></i>
+                    <span>Free Prediction</span>
+                </a>
+                <a href="#" class="px-4 py-2 rounded-full bg-[#131b2e] border border-yellow-500/30 text-yellow-400 text-sm font-medium hover:bg-yellow-500 hover:text-black transition flex items-center space-x-2 shadow-sm">
+                    <i class="fa-solid fa-crown"></i>
+                    <span>VIP Prediction</span>
+                </a>
+                <a href="#" class="px-4 py-2 rounded-full bg-[#131b2e] border border-yellow-500/30 text-yellow-400 text-sm font-medium hover:bg-yellow-500 hover:text-black transition flex items-center space-x-2 shadow-sm">
+                    <i class="fa-solid fa-id-card"></i>
+                    <span>Membership</span>
+                </a>
+                <a href="#" class="px-4 py-2 rounded-full bg-[#131b2e] border border-yellow-500/30 text-yellow-400 text-sm font-medium hover:bg-yellow-500 hover:text-black transition flex items-center space-x-2 shadow-sm">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Community</span>
+                </a>
+            </nav>
+
+            <!-- Right Actions: Country Selector, Sign Up & Login -->
+            <div class="flex items-center space-x-3">
+                <div class="hidden sm:flex items-center space-x-1 px-3 py-1.5 rounded-full bg-[#131b2e] border border-gray-700 text-xs font-medium text-gray-300">
+                    <span class="text-sm">🇧🇩</span>
+                    <span>Bangladesh</span>
+                    <i class="fa-solid fa-chevron-down text-[10px] ml-1"></i>
+                </div>
+                
+                <!-- Sign Up Button -->
+                <a href="#" class="px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-400 text-black font-semibold text-sm shadow-md hover:opacity-95 transition">
+                    Sign Up
+                </a>
+
+                <!-- Login Button -->
+                <a href="#" class="px-5 py-2 rounded-full bg-[#131b2e] border border-yellow-500 text-yellow-400 font-semibold text-sm hover:bg-yellow-500 hover:text-black transition shadow-sm">
+                    Login
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-12 px-6 overflow-hidden bg-gradient-to-b from-[#0b0f19] via-[#0e1628] to-[#070913]">
+        <!-- Background decorative lighting elements -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-amber-500/10 blur-[120px] pointer-events-none rounded-full"></div>
+
+        <div class="max-w-7xl mx-auto text-center relative z-10 mb-12">
+            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 text-xs font-semibold mb-4">
+                <i class="fa-solid fa-crown text-yellow-400"></i>
+                <span>Your Trusted Platform for Overseas Opportunities</span>
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-3">
+                Welcome to <span class="gold-gradient-text">Probashi Voice</span>
+            </h1>
+            <p class="text-gray-400 text-sm sm:text-base max-w-xl mx-auto">
+                Connect with global portals, secure updates, work opportunities, and expert assistance tailored for you.
+            </p>
+        </div>
+
+        <!-- Country Cards & Search Widget Grid -->
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
+            
+            <!-- Thailand Card -->
+            <div class="rounded-2xl bg-[#111827] border card-glow-thailand p-6 flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 rounded-full blur-2xl group-hover:bg-orange-500/20 transition"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-2xl">🇹🇭</span>
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-orange-400 bg-orange-500/10 px-2.5 py-1 rounded-full border border-orange-500/20">Active Portal</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">THAILAND</h3>
+                    <p class="text-xs text-gray-400 mb-6">Work • Study • Future</p>
+                </div>
+                <div>
+                    <a href="#" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 text-black font-bold text-sm flex items-center justify-center space-x-2 hover:opacity-95 transition shadow-lg shadow-orange-500/20">
+                        <span>Enter Room</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Malaysia Card -->
+            <div class="rounded-2xl bg-[#111827] border card-glow-malaysia p-6 flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl group-hover:bg-blue-500/20 transition"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-2xl">🇲🇾</span>
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-blue-400 bg-blue-500/10 px-2.5 py-1 rounded-full border border-blue-500/20">Active Portal</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">MALAYSIA</h3>
+                    <p class="text-xs text-gray-400 mb-6">Work • Study • Future</p>
+                </div>
+                <div>
+                    <a href="#" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold text-sm flex items-center justify-center space-x-2 hover:opacity-95 transition shadow-lg shadow-blue-500/20">
+                        <span>Enter Room</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Saudi Arabia Card -->
+            <div class="rounded-2xl bg-[#111827] border card-glow-saudi p-6 flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl group-hover:bg-emerald-500/20 transition"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-2xl">🇸🇦</span>
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20">Active Portal</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">SAUDI ARABIA</h3>
+                    <p class="text-xs text-gray-400 mb-6">Work • Hajj • Future</p>
+                </div>
+                <div>
+                    <a href="#" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 text-black font-bold text-sm flex items-center justify-center space-x-2 hover:opacity-95 transition shadow-lg shadow-emerald-500/20">
+                        <span>Enter Room</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- UAE Card -->
+            <div class="rounded-2xl bg-[#111827] border card-glow-uae p-6 flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-pink-500/10 rounded-full blur-2xl group-hover:bg-pink-500/20 transition"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-2xl">🇦🇪</span>
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-pink-400 bg-pink-500/10 px-2.5 py-1 rounded-full border border-pink-500/20">Active Portal</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">UAE</h3>
+                    <p class="text-xs text-gray-400 mb-6">Work • Study • Future</p>
+                </div>
+                <div>
+                    <a href="#" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-pink-500 to-rose-500 text-white font-bold text-sm flex items-center justify-center space-x-2 hover:opacity-95 transition shadow-lg shadow-pink-500/20">
+                        <span>Enter Room</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Qatar Card -->
+            <div class="rounded-2xl bg-[#111827] border card-glow-qatar p-6 flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-red-500/10 rounded-full blur-2xl group-hover:bg-red-500/20 transition"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-2xl">🇶🇦</span>
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-red-400 bg-red-500/10 px-2.5 py-1 rounded-full border border-red-500/20">Active Portal</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">QATAR</h3>
+                    <p class="text-xs text-gray-400 mb-6">Work • Study • Future</p>
+                </div>
+                <div>
+                    <a href="#" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-red-600 to-rose-600 text-white font-bold text-sm flex items-center justify-center space-x-2 hover:opacity-95 transition shadow-lg shadow-red-600/20">
+                        <span>Enter Room</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Oman Card -->
+            <div class="rounded-2xl bg-[#111827] border card-glow-oman p-6 flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl group-hover:bg-cyan-500/20 transition"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-2xl">🇴🇲</span>
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-cyan-400 bg-cyan-500/10 px-2.5 py-1 rounded-full border border-cyan-500/20">Active Portal</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">OMAN</h3>
+                    <p class="text-xs text-gray-400 mb-6">Work • Study • Future</p>
+                </div>
+                <div>
+                    <a href="#" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-sm flex items-center justify-center space-x-2 hover:opacity-95 transition shadow-lg shadow-cyan-500/20">
+                        <span>Enter Room</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Kuwait Card -->
+            <div class="rounded-2xl bg-[#111827] border card-glow-kuwait p-6 flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-yellow-500/10 rounded-full blur-2xl group-hover:bg-yellow-500/20 transition"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-2xl">🇰🇼</span>
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-yellow-400 bg-yellow-500/10 px-2.5 py-1 rounded-full border border-yellow-500/20">Active Portal</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">KUWAIT</h3>
+                    <p class="text-xs text-gray-400 mb-6">Work • Study • Future</p>
+                </div>
+                <div>
+                    <a href="#" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-500 text-black font-bold text-sm flex items-center justify-center space-x-2 hover:opacity-95 transition shadow-lg shadow-yellow-500/20">
+                        <span>Enter Room</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bahrain & Search Box Container (Matching Layout Reference) -->
+            <div class="rounded-2xl bg-[#111827] border card-glow-bahrain p-6 flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-purple-500/10 rounded-full blur-2xl group-hover:bg-purple-500/20 transition"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-2xl">🇧🇭</span>
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-purple-400 bg-purple-500/10 px-2.5 py-1 rounded-full border border-purple-500/20">Active Portal</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">BAHRAIN</h3>
+                    <p class="text-xs text-gray-400 mb-6">Work • Study • Future</p>
+                </div>
+                <div>
+                    <a href="#" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-600 text-white font-bold text-sm flex items-center justify-center space-x-2 hover:opacity-95 transition shadow-lg shadow-purple-500/20">
+                        <span>Enter Room</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Search Number Dedicated Floating Box -->
+        <div class="max-w-7xl mx-auto mt-8">
+            <div class="rounded-2xl bg-[#111827]/90 border border-yellow-500/30 p-6 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-yellow-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-yellow-500/10 border border-yellow-500/30 flex items-center justify-center text-yellow-400 text-xl shadow-inner">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-white">Search Number</h4>
+                        <p class="text-xs text-gray-400">Find your desired number quickly and easily.</p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-auto flex items-center space-x-3">
+                    <input type="text" placeholder="Enter number..." class="bg-[#0b0f19] border border-gray-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500 w-full sm:w-64">
+                    <button class="px-6 py-2.5 rounded-xl bg-gradient-to-r from-yellow-500 to-amber-400 text-black font-bold text-sm hover:opacity-95 transition shadow-md shadow-yellow-500/20 whitespace-nowrap">
+                        Search Now <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Bottom Banner Bar -->
+    <section class="py-8 px-6 bg-[#070913] border-t border-gray-900">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center sm:text-left">
+            <div class="flex items-center justify-center sm:justify-start space-x-4 p-4 rounded-xl bg-[#111827]/50 border border-gray-800/80">
+                <div class="w-10 h-10 rounded-full bg-yellow-500/10 flex items-center justify-center text-yellow-400 flex-shrink-0">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div>
+                    <h5 class="text-sm font-bold text-white">100% Trusted</h5>
+                    <p class="text-xs text-gray-400">Safe & Secure</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-center sm:justify-start space-x-4 p-4 rounded-xl bg-[#111827]/50 border border-gray-800/80">
+                <div class="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-400 flex-shrink-0">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div>
+                    <h5 class="text-sm font-bold text-white">Fast Results</h5>
+                    <p class="text-xs text-gray-400">Instant Updates</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-center sm:justify-start space-x-4 p-4 rounded-xl bg-[#111827]/50 border border-gray-800/80">
+                <div class="w-10 h-10 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-400 flex-shrink-0">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <div>
+                    <h5 class="text-sm font-bold text-white">Global Community</h5>
+                    <p class="text-xs text-gray-400">Stay Connected</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-center sm:justify-start space-x-4 p-4 rounded-xl bg-[#111827]/50 border border-gray-800/80">
+                <div class="w-10 h-10 rounded-full bg-purple-500/10 flex items-center justify-center text-purple-400 flex-shrink-0">
+                    <i class="fa-solid fa-crown"></i>
+                </div>
+                <div>
+                    <h5 class="text-sm font-bold text-white">VIP Access</h5>
+                    <p class="text-xs text-gray-400">Premium Features</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section with Facebook & Twitter Links -->
+    <footer class="py-6 px-6 bg-[#070913] border-t border-gray-800/60 text-center text-xs text-gray-500">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Probashi Voice. All rights reserved. Together We Build Better Future ❤️</p>
+            
+            <!-- Social Links (Facebook & Twitter) -->
+            <div class="flex items-center space-x-4">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-[#131b2e] border border-gray-700 flex items-center justify-center text-gray-400 hover:text-blue-400 hover:border-blue-500 transition">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-[#131b2e] border border-gray-700 flex items-center justify-center text-gray-400 hover:text-sky-400 hover:border-sky-500 transition">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
